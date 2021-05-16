@@ -32,12 +32,7 @@ var nombreRandom=Math.round(Math.random()*(blagues.length-1))
 
 var blagueChoisie=blagues[nombreRandom];
 
-message.channel.send(new Discord.MessageEmbed()
-.setTitle(':joy: Blague :joy:')
-.setColor('RANDOM')
-.setImage("**" + blagueChoisie + "**")
-.setFooter('Bot de Graph\'Commmunity')
-.setTimestamp())
+message.channel.send("**" + blagueChoisie + "**")
 },
 name: `blague`
     }
