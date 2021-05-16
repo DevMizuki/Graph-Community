@@ -11,6 +11,7 @@ module.exports = {
 .addField('@bang', 'Mentionnez la personne que vous voulez pour la tuer')
 .addField('@pfc <pierre, feuille ou ciseaux>', 'Pierre feuille ciseaux avec le bot')
 .addField('@pdp @...', 'Voir la photo de profil d\'un membre du serveur')
+.addField('@blague', 'Le bot va vous raconter une blague !')
 
 .setTimestamp())
 },
