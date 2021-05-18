@@ -9,5 +9,5 @@ module.exports = {
 .setImage("https://media.discordapp.net/attachments/798928215271800842/833681937385652264/1610295255316.jpg")
 .setTimestamp())
 },
-    name : 'effectifbykirua...'
+    name : 'ladaronnedeljefe'
 }
