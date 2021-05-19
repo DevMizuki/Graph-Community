@@ -5,8 +5,8 @@ module.exports = {
         var suggestion=message.content.split(" ").splice(1).join(" ");
         const user=message.author
         const EMBEDSUG=new Discord.MessageEmbed
-        member.guild.channels.cache.get(config.greeting.sug).send(EMBEDSUG)
 
+        member.guild.channels.cache.get(config.greeting.sug).send(EMBEDSUG)
         EMBEDSUG.setTitle('__Suggestion__')
         EMBEDSUG.setColor('RANDOM')
         EMBEDSUG.setDescription("Il propose de :\n"+"**"+suggestion+"**")
