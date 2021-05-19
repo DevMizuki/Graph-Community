@@ -6,12 +6,13 @@ module.exports = {
         const user=message.author
         const EMBEDSUG=new Discord.MessageEmbed
 
-        member.guild.channels.cache.get(config.greeting.sug).send(EMBEDSUG)
         EMBEDSUG.setTitle('__Suggestion__')
         EMBEDSUG.setColor('RANDOM')
         EMBEDSUG.setDescription("Il propose de :\n"+"**"+suggestion+"**")
         EMBEDSUG.setThumbnail(user.displayAvatarURL())
         EMBEDSUG.setFooter('Suggestion de '+message.author.username)
+        member.guild.channels.cache.get(config.greeting.sug).send(EMBEDSUG)
+
 },
     name : 'sugg'
 }
