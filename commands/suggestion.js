@@ -4,14 +4,14 @@ module.exports = {
       if (!args[0]) return message.channel.send("Indique la suggestion que tu veux faire...")
         var suggestion=message.content.split(" ").splice(1).join(" ");
         const user=message.author
+        const EMBEDSUG=new Discord.MessageEmbed
+        member.guild.channels.cache.get(config.greeting.sug).send(EMBEDSUG)
 
-        message.channel.send(new Discord.MessageEmbed()
-.setTitle('__Suggestion__')
-.setColor('RANDOM')
-.setDescription("Il propose de :\n\n"+"**"+suggestion+"**")
-.setThumbnail(user.displayAvatarURL())
-.setFooter('Suggestion de '+message.author.username)
-.setTimestamp())
+        EMBEDSUG.setTitle('__Suggestion__')
+        EMBEDSUG.setColor('RANDOM')
+        EMBEDSUG.setDescription("Il propose de :\n"+"**"+suggestion+"**")
+        EMBEDSUG.setThumbnail(user.displayAvatarURL())
+        EMBEDSUG.setFooter('Suggestion de '+message.author.username)
 },
     name : 'sugg'
 }
