@@ -8,7 +8,7 @@ module.exports = {
         message.channel.send(new Discord.MessageEmbed()
 .setTitle('__Suggestion__')
 .setColor('RANDOM')
-.setDescription("Suggestion de"+message.author.username+"\nIl propose de :"+suggestion)
+.setDescription("Suggestion de"+message.author.username+"\nIl propose :\n"+"**"+suggestion+"**")
 .setThumbnail("")
 .setFooter('Bot de Graph\'Commmunity')
 .setTimestamp())
