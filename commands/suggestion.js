@@ -11,7 +11,6 @@ module.exports = {
 .setDescription("Suggestion de"+message.author.username+"\nIl propose de :"+suggestion)
 .setThumbnail("")
 .setFooter('Bot de Graph\'Commmunity')
-.setImage(urlChoisie)
 .setTimestamp())
 },
     name : 'sugg'
