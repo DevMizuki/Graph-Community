@@ -4,6 +4,7 @@ module.exports = {
         message.channel.send(new Discord.MessageEmbed()
         .setTitle('Vous voulez avoir accès à la catégorie :')
         .setDescription("🗣️ : Communauté\n🖍️ : Graphisme\n🎮 : Mini Jeux")
+        .setColor("RANDOM")
         .setTimestamp()).then( message => {
             message.react("🗣️")
             message.react("🖍️")

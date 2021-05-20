@@ -3,6 +3,7 @@ module.exports = {
     run: message =>{
         message.channel.send(new Discord.MessageEmbed()
         .setTitle('Vous êtes :')
+        .setColor("RANDOM")
         .setDescription("✏️ : Dessinateur\n💻 : Monteur\n📹 : Youtubeur\n📱 : Graphiste")
         .setTimestamp()).then( message => {
             message.react("✏️")
@@ -13,6 +14,7 @@ module.exports = {
         message.channel.send(new Discord.MessageEmbed()
         .setTitle('Vous êtes :')
         .setDescription("👦 : Un homme\n👩 : Une femme\n👶 : - de 14 ans\n🧑 : 14 - 18 ans\n👴 : + de 18 ans")
+        .setColor("RANDOM")
         .setTimestamp()).then(message => {
             message.react("👦")
             message.react("👩")
