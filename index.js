@@ -52,9 +52,9 @@ member.guild.channels.cache.get(config.greeting.channelOff).send(EmbedBye)
 
 client.on('ready', () => {
     const status = [
-        () => 'Lire vos messages',
-        () => 'Crée par Zabuza Momochi#3026',
-        () => 'Bot du Serveur Graph Community'
+        () => '@help',
+        () => 'Crée par Itachi Uchiwa#3026',
+        () => 'Paolo jte love bg... Rage pas c\'est la vie...'
     ]
     let i = 0
     setInterval(() => {
