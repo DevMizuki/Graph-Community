@@ -12,7 +12,7 @@ module.exports = {
         const reason = args.slice(1).join(' ') || 'Aucune raison fournie'
         await member.kick(reason)
         message.channel.send(`${member.user.tag} a été exclu !`)
-        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        message.guild.channels.cache.get("836239422785323048").send(new Discord.MessageEmbed()
             .setColor('RANDOM')
             .setAuthor(`[KICK] ${member.user.tag}`, member.user.displayAvatarURL())
             .addField('Utilisateur', member, true)

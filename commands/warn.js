@@ -19,7 +19,7 @@ module.exports = {
         })
         fs.writeFileSync('./db.json', JSON.stringify(client.db))
         message.channel.send(`${member} a été warn pour ${reason} !`)
-        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        message.guild.channels.cache.get("836239422785323048").send(new Discord.MessageEmbed()
             .setTitle(`Warn : ${member.user.tag}`)
             .setColor('#FFFF00')
             .setFooter(`[WARN] ${member.user.tag}`, member.user.displayAvatarURL())

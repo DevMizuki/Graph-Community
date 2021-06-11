@@ -37,7 +37,7 @@ client.on('guildMemberAdd', member => {
     EmbedBVN.setDescription(`Nous te souhaitons un bon séjour parmi nous **${member.user.username}** et espérons que tu resteras ! ^^\n\nN'hésite pas à lire le règlement dans <#805422530310569995>`)
     EmbedBVN.setImage("https://media.discordapp.net/attachments/798928215271800842/833681937385652264/1610295255316.jpg")
     EmbedBVN.setColor("RANDOM")
-    member.guild.channels.cache.get(config.greeting.channelON).send(EmbedBVN)
+    member.guild.channels.cache.get("836234121482076210").send(EmbedBVN)
 
 })
 
@@ -47,7 +47,7 @@ EmbedBye.setTitle(`Au revoir à ${member.user.username}`)
 EmbedBye.setDescription(`Au revoir à toi **${member.user.username}**, Nous te souhaitons une bonne continuation, et regrettons ton départ :sob:`)
 EmbedBye.setImage("https://media.discordapp.net/attachments/798928215271800842/833681937385652264/1610295255316.jpg")
 EmbedBye.setColor("RANDOM")
-member.guild.channels.cache.get(config.greeting.channelOff).send(EmbedBye)
+member.guild.channels.cache.get("805422530310569994").send(EmbedBye)
 })
 
 client.on('ready', () => {
