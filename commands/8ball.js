@@ -1,10 +1,8 @@
 const Discord = require ('discord.js')
 module.exports = {
     run: message => {
+        if (!args[0]) return message.channel.send("<@" + message.author.id + ">" + " Indique ta question !");
         let question=message.content.split(" ").splice(1).join(" ");
-        if (question == "") {
-    question = "Tu ne m'as pas posé de question, pourtant je sais tout  :sob:"
-  }
   question = question
         let reponse=["Oui, c'est certain !!", "Non, c'est impossible !!", "Hmmm... Je ne sais pas"]
         var reponseChoisie=Math.round(Math.random()*(reponse.length-1))
