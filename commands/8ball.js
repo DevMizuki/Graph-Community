@@ -1,4 +1,7 @@
 const Discord = require ('discord.js')
+const PREFIX = (config.prefix)
+const config = require("./config.json")
+const args = message.content.slice(PREFIX.length).split(/ +/);
 module.exports = {
     run: message => {
         if (!args[0]) return message.channel.send("<@" + message.author.id + ">" + " Indique ta question !");
