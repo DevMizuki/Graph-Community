@@ -1,9 +1,10 @@
 const Discord = require ('discord.js')
-const PREFIX = (config.prefix)
-const config = require("./config.json")
-const args = message.content.slice(PREFIX.length).split(/ +/);
+
 module.exports = {
     run: message => {
+        const PREFIX = (config.prefix)
+const config = require("./config.json")
+const args = message.content.slice(PREFIX.length).split(/ +/);
         if (!args[0]) return message.channel.send("<@" + message.author.id + ">" + " Indique ta question !");
         let question=message.content.split(" ").splice(1).join(" ");
         let reponse=["Oui, c'est certain !!", "Non, c'est impossible !!", "Hmmm... Je ne sais pas"]
