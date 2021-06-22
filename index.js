@@ -38,7 +38,7 @@ client.on('guildMemberAdd', member => {
     EmbedBVN.setImage("https://media.discordapp.net/attachments/798928215271800842/833681937385652264/1610295255316.jpg")
     EmbedBVN.setColor("RANDOM")
     member.guild.channels.cache.get("836234121482076210").send(EmbedBVN)
-
+    member.guild.channels.cache.get("846358288056451092").send(`---\nBienvenue à ${member.user.username} sur Graph'Community ! Grâce à lui nous sommes désormais ${message.guild.memberCount}\n---`)
 })
 
 client.on('guildMemberRemove', member => {
@@ -80,9 +80,4 @@ client.on('messageReactionRemove', (reaction, user) => {
     const prop = reaction.emoji.id ? 'id' : 'name'
     const emoji = reactionRoleElem.emojis.find(emoji => emoji[prop] === reaction.emoji[prop])
     if (emoji) reaction.message.guild.member(user).roles.remove(emoji.roles)
-})
-
-client.on('guildMemberAdd', member => {
-    member.guild.channels.cache.get("836234121482076210").send(`---\nBienvenue à ${member.user.username} sur Graph'Community ! Grâce à lui nous sommes désormais ${message.guild.memberCount}\n---`)
-
 })
