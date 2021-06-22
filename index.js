@@ -38,8 +38,6 @@ client.on('guildMemberAdd', member => {
     EmbedBVN.setImage("https://media.discordapp.net/attachments/798928215271800842/833681937385652264/1610295255316.jpg")
     EmbedBVN.setColor("RANDOM")
     member.guild.channels.cache.get("836234121482076210").send(EmbedBVN)
-    member.guild.channels.cache.get("846358288056451092").send(`---\nBienvenue à ${member.user.username} sur Graph'Community ! Grâce à lui nous sommes désormais ${message.guild.memberCount}\n---`)
-    member.guild.channels.cache.get("846358288056451092").send(`<a:welcome1:856863559958528011><a:Welcome2:856863581002137612>`)
 })
 
 client.on('guildMemberRemove', member => {
